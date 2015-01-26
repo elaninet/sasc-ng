@@ -1,0 +1,91 @@
+sc.o: sc.c ../../../include/vdr/plugin.h ../../../include/vdr/i18n.h \
+ ../../../include/vdr/menuitems.h ../../../include/vdr/osdbase.h \
+ ../../../include/vdr/config.h ../../../include/vdr/font.h \
+ ../../../include/vdr/tools.h ../../../include/vdr/osd.h \
+ ../../../include/vdr/skins.h ../../../include/vdr/channels.h \
+ ../../../include/vdr/sources.h ../../../include/vdr/thread.h \
+ ../../../include/vdr/epg.h ../../../include/vdr/keys.h \
+ ../../../include/vdr/recording.h ../../../include/vdr/timers.h \
+ ../../../include/vdr/themes.h ../../../include/vdr/menuitems.h \
+ ../../../include/vdr/status.h ../../../include/vdr/device.h \
+ ../../../include/vdr/ci.h ../../../include/vdr/eit.h \
+ ../../../include/vdr/filter.h ../../../include/vdr/nit.h \
+ ../../../include/vdr/pat.h ../../../include/vdr/sdt.h \
+ ../../../include/vdr/sections.h ../../../include/vdr/spu.h \
+ ../../../include/vdr/player.h ../../../include/vdr/dvbdevice.h \
+ ../../../include/vdr/dvbspu.h ../../../include/vdr/channels.h \
+ ../../../include/vdr/interface.h ../../../include/vdr/remote.h \
+ ../../../include/vdr/svdrp.h ../../../include/vdr/menu.h \
+ ../../../include/vdr/tools.h ../../../include/vdr/config.h scsetup.h \
+ filter.h ../../../include/vdr/thread.h misc.h system.h data.h cam.h \
+ ../../../include/vdr/ci.h global.h device.h smartcard.h network.h opts.h \
+ i18n.h ../../../include/vdr/i18n.h log-core.h log.h version.h
+data.o: data.c data.h ../../../include/vdr/thread.h \
+ ../../../include/vdr/tools.h misc.h override.h scsetup.h log-core.h \
+ log.h i18n.h ../../../include/vdr/i18n.h
+filter.o: filter.c ../../../include/vdr/device.h \
+ ../../../include/vdr/channels.h ../../../include/vdr/config.h \
+ ../../../include/vdr/i18n.h ../../../include/vdr/font.h \
+ ../../../include/vdr/tools.h ../../../include/vdr/sources.h \
+ ../../../include/vdr/thread.h ../../../include/vdr/ci.h \
+ ../../../include/vdr/eit.h ../../../include/vdr/filter.h \
+ ../../../include/vdr/nit.h ../../../include/vdr/pat.h \
+ ../../../include/vdr/sdt.h ../../../include/vdr/sections.h \
+ ../../../include/vdr/spu.h ../../../include/vdr/tools.h filter.h \
+ ../../../include/vdr/thread.h misc.h log-core.h log.h
+system.o: system.c ../../../include/vdr/tools.h system.h data.h \
+ ../../../include/vdr/thread.h misc.h cam.h ../../../include/vdr/ci.h \
+ ../../../include/vdr/channels.h ../../../include/vdr/config.h \
+ ../../../include/vdr/i18n.h ../../../include/vdr/font.h \
+ ../../../include/vdr/tools.h ../../../include/vdr/sources.h \
+ ../../../include/vdr/thread.h global.h override.h opts.h i18n.h \
+ ../../../include/vdr/i18n.h log-core.h log.h
+misc.o: misc.c ../../../include/vdr/tools.h ../../../include/vdr/thread.h \
+ misc.h
+cam.o: cam.c ../../../include/vdr/device.h \
+ ../../../include/vdr/channels.h ../../../include/vdr/config.h \
+ ../../../include/vdr/i18n.h ../../../include/vdr/font.h \
+ ../../../include/vdr/tools.h ../../../include/vdr/sources.h \
+ ../../../include/vdr/thread.h ../../../include/vdr/ci.h \
+ ../../../include/vdr/eit.h ../../../include/vdr/filter.h \
+ ../../../include/vdr/nit.h ../../../include/vdr/pat.h \
+ ../../../include/vdr/sdt.h ../../../include/vdr/sections.h \
+ ../../../include/vdr/spu.h ../../../include/vdr/channels.h \
+ ../../../include/vdr/thread.h cam.h ../../../include/vdr/ci.h data.h \
+ ../../../include/vdr/tools.h misc.h global.h device.h \
+ ../../../include/vdr/dvbdevice.h ../../../include/vdr/device.h \
+ ../../../include/vdr/dvbspu.h ../../../include/vdr/osd.h scsetup.h \
+ filter.h system.h override.h log-core.h log.h
+device.o: device.c ../../../include/vdr/channels.h \
+ ../../../include/vdr/config.h ../../../include/vdr/i18n.h \
+ ../../../include/vdr/font.h ../../../include/vdr/tools.h \
+ ../../../include/vdr/sources.h ../../../include/vdr/thread.h \
+ ../../../include/vdr/ci.h ../../../include/vdr/channels.h \
+ ../../../include/vdr/dvbdevice.h ../../../include/vdr/device.h \
+ ../../../include/vdr/ci.h ../../../include/vdr/eit.h \
+ ../../../include/vdr/filter.h ../../../include/vdr/nit.h \
+ ../../../include/vdr/pat.h ../../../include/vdr/sdt.h \
+ ../../../include/vdr/sections.h ../../../include/vdr/spu.h \
+ ../../../include/vdr/dvbspu.h ../../../include/vdr/osd.h \
+ ../../../include/vdr/thread.h device.h misc.h cam.h data.h \
+ ../../../include/vdr/tools.h scsetup.h system.h override.h log-core.h \
+ log.h
+smartcard.o: smartcard.c ../../../include/vdr/tools.h \
+ ../../../include/vdr/thread.h smartcard.h data.h misc.h global.h \
+ log-core.h log.h
+network.o: network.c ../../../include/vdr/thread.h \
+ ../../../include/vdr/tools.h network.h misc.h log-core.h log.h
+crypto.o: crypto.c crypto.h crypto-bn.h support/idea.h helper.h log.h \
+ misc.h support/i_cbc.c support/idea.h support/idea_lcl.h support/i_ecb.c \
+ support/i_skey.c
+system-common.o: system-common.c ../../../include/vdr/tools.h \
+ system-common.h data.h ../../../include/vdr/thread.h misc.h system.h \
+ smartcard.h crypto-bn.h
+parse.o: parse.c parse.h misc.h log.h
+log.o: log.c ../../../include/vdr/tools.h ../../../include/vdr/thread.h \
+ log.h misc.h
+override.o: override.c ../../../include/vdr/sources.h \
+ ../../../include/vdr/config.h ../../../include/vdr/i18n.h \
+ ../../../include/vdr/font.h ../../../include/vdr/tools.h override.h \
+ data.h ../../../include/vdr/thread.h ../../../include/vdr/tools.h misc.h \
+ global.h log-core.h log.h
