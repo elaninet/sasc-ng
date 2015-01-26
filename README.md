@@ -1,2 +1,0 @@
-# sasc-ng
-sasc-ng

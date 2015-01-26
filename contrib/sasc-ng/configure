@@ -131,18 +131,18 @@ echo "\nYou should set the configure option '--dvb-dir=' like this:\n
 exit 1
 fi
 
-git clean -xfd > /dev/null 2>&1
-git reset --hard HEAD > /dev/null 2>&1
+#git clean -xfd > /dev/null 2>&1
+#git reset --hard HEAD > /dev/null 2>&1
 
 version=$( uname -r|cut -d\- -f1| tr -d '[A-Z][a-z]' )
 patch=$(echo | awk -v n1=$version -v n2=3.6.999 '{if (n1>n2) printf ("1"); else printf ("0");}')
 
-if [ ${patch} -gt 0 ]
-then
-cd ../../
-patch -p1 < contrib/sasc-ng/compile-with-3.7-or-higher-kernel.patch
-cd contrib/sasc-ng
-fi
+#if [ ${patch} -gt 0 ]
+#then
+#cd ../../
+#patch -p1 < contrib/sasc-ng/compile-with-3.7-or-higher-kernel.patch
+#cd contrib/sasc-ng
+#fi
 
 
 if test "x$CXX" = "x"; then
